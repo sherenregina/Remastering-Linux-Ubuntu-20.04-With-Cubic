@@ -1,0 +1,66 @@
+Remastering LINUX with Cubic
+
+1. Install Cubic
+	sudo apt-add-repository ppa:cubic-wizard/release
+	sudo apt update
+	sudo apt install cubic
+
+2. Create folder for cubic
+	mkdir -p /home/egypt/project-linux
+
+3. Open and run Cubic, then select the folder that has been created. Select the iso that you want to customize. Set the version, name, directory, volume id, release, and disk name as you want
+
+4. Install application:
+	- Python 3.x
+		apt install python3
+	- Apache Server
+		apt install apache2
+	- Dia Diagram Editor
+		apt install dia
+	- Scilab
+		apt install scilab
+	- Multimedia codecs
+		apt install ubuntu-restricted-extras
+	- VLC Media Player
+		apt install vlc
+	- Open Broadcaster Software (OBS)
+		apt install obs-studio
+	- Blender
+		apt install blender
+	- GimpShop
+		apt install gimp
+	- OpenOffice
+		sudo apt-get install -y wget
+		wget https://sourceforge.net/projects/openofficeorg.mirror/files/4.1.8/binaries/en-US/Apache_OpenOffice_4.1.8_Linux_x86-64_install-deb_en-US.tar.gz
+		tar xvf Apache_OpenOffice_4.1.8_Linux_x86-64_install-deb_en-US.tar.gz
+		cd en-US/DEBS
+		sudo dpkg -i  *.deb
+		cd desktop-integration/
+		sudo dpkg -i *.deb
+	- Mendeley
+		wget https://desktop-download.mendeley.com/download/apt/pool/main/m/mendeleydesktop/mendeleydesktop_1.19.4-stable_amd64.deb
+		dpkg -i mendeleydesktop_1.19.4-stable_amd64.deb
+		apt -f install
+
+5. Change theme and walpaper
+	- Change Icons
+		cd /usr/share/icons/hicolor/256x256/apps
+		Drag your icons to Cubic, then copy
+		ls
+		mv <your icon> ubuntu-logo-icon.png
+		
+	- Change Backgrounds
+		cd /usr/share/backgrounds
+		Drag your backgrounds to Cubic, then copy
+		ls
+		mv <your background> warty-final-ubuntu.png
+		
+	- Change Theme
+		apt install plymouth-themes
+		
+6. Finishing
+	Click next on the top right corner
+	
+7. Copy BM-Nux.iso file to your sharedfolder
+
+8. Install BM-Nux.iso with Virtual Box
